@@ -10,20 +10,10 @@ namespace uri_1016
     {
         static void Main(string[] args)
         {
-            int DISTANCIA = int.Parse(Console.ReadLine());
-            double DISTANCIAXY = 0;
-            double DISTANCIACARROX = 0;
-            double DISTANCIACARROY = 0;
-            int MINUTOS = 0;
-            while (DISTANCIAXY < DISTANCIA)
-            {
-                DISTANCIACARROX += 1;
-                DISTANCIACARROY += 1.5;
-                DISTANCIAXY = DISTANCIACARROY - DISTANCIACARROX;
-                MINUTOS += 1;
-            }
-            Console.WriteLine($"{MINUTOS} minutos");
-
+            int distancia, tempo;
+            tempo = int.Parse(Console.ReadLine());
+            distancia = tempo * 2;
+            Console.WriteLine(distancia + " minutos");
         }
     }
 }
