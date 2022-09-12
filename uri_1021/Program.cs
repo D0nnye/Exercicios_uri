@@ -15,38 +15,39 @@ namespace uri_1021
             int quociente, resto, nota, moeda;
 
             N = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+            //Console.Clear();
             resto = (int)(N * 100 + 0.5);
             //576.81 * 100 = 57680.99999
             Console.WriteLine("NOTAS:");
 
             nota = 100;
             quociente = resto / (nota * 100);
-            Console.WriteLine(quociente + " nota(s) de R$ " + nota + ".00");
+            Console.WriteLine(quociente + " nota(s) de R$ 100.00");
             resto = resto % (nota * 100);
 
             nota = 50;
             quociente = resto / (nota * 100);
-            Console.WriteLine(quociente + " nota(s) de R$ " + nota + ".00");
+            Console.WriteLine(quociente + " nota(s) de R$ 50.00");
             resto = resto % (nota * 100);
 
             nota = 20;
             quociente = resto / (nota * 100);
-            Console.WriteLine(quociente + " nota(s) de R$ " + nota + ".00");
+            Console.WriteLine(quociente + " nota(s) de R$ 20.00");
             resto = resto % (nota * 100);
 
             nota = 10;
             quociente = resto / (nota * 100);
-            Console.WriteLine(quociente + " nota(s) de R$ " + nota + ".00");
+            Console.WriteLine(quociente + " nota(s) de R$ 10.00");
             resto = resto % (nota * 100);
 
             nota = 5;
             quociente = resto / (nota * 100);
-            Console.WriteLine(quociente + " nota(s) de R$ " + nota + ".00");
+            Console.WriteLine(quociente + " nota(s) de R$ 5.00");
             resto = resto % (nota * 100);
 
             nota = 2;
             quociente = resto / (nota * 100);
-            Console.WriteLine(quociente + " nota(s) de R$ " + nota + ".00");
+            Console.WriteLine(quociente + " nota(s) de R$ 2.00");
             resto = resto % (nota * 100);
 
             Console.WriteLine("MOEDAS: ");
