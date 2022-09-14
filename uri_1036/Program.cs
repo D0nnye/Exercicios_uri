@@ -1,7 +1,5 @@
 ﻿using System;
 using System.Globalization;
-
-
 namespace uri_1036
 {
     class Program
@@ -9,6 +7,8 @@ namespace uri_1036
         static void Main(string[] args)
         {
             double a, b, c, delta, r1, r2;
+
+
 
             string[] vet = Console.ReadLine().Split(' ');
             a = double.Parse(vet[0], CultureInfo.InvariantCulture);
@@ -23,7 +23,7 @@ namespace uri_1036
 
             if (a == 0 || delta < 0)
             {
-                Console.WriteLine("Impossivel calcular");
+                Console.WriteLine("impossivel calcular");
             }
             else
             {
